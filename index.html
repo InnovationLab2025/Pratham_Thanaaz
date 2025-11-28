@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LumiNest | Glow from the Inside Out</title>
+  <link rel="stylesheet" href="style.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
+</head>
+<body>
+  <header>
+    <h1 class="logo">LumiNest</h1>
+    <p class="tagline">Glow from the inside out </p>
+    <div class="header-icons">
+      <i class="fa-solid fa-filter"></i>
+      <i class="fa-solid fa-cart-shopping" id="cart-icon"></i>
+    </div>
+  </header>
+
+  <section class="filters">
+    <select id="categoryFilter">
+      <option value="all">All Categories</option>
+      <option value="cleanser">Cleanser</option>
+      <option value="serum">Serum</option>
+      <option value="moisturizer">Moisturizer</option>
+      <option value="mask">Mask</option>
+    </select>
+
+    <select id="priceFilter">
+      <option value="all">All Prices</option>
+      <option value="low">Below ₹500</option>
+      <option value="mid">₹500 - ₹1000</option>
+      <option value="high">Above ₹1000</option>
+    </select>
+  </section>
+
+  <main class="product-grid">
+    <div class="product" data-category="cleanser" data-price="450">
+      <img src="/images/image1.jpeg.jpeg" alt="Cleanser" />
+      <h3>Rose Gentle Cleanser</h3>
+      <p>₹450</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-category="serum" data-price="899">
+      <img src="/images/image2.jpeg.jpeg" alt="Serum" />
+      <h3>Vitamin C Serum</h3>
+      <p>₹899</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-category="moisturizer" data-price="650">
+      <img src="/images/image3.jpeg.jpeg" alt="Moisturizer" />
+      <h3>Hydra Glow Moisturizer</h3>
+      <p>₹650</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-category="mask" data-price="350">
+      <img src="/images/image4.jpeg.jpeg" alt="Mask" />
+      <h3>Green Tea Face Mask</h3>
+      <p>₹350</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-category="serum" data-price="1200">
+      <img src="/images/image5.jpeg.jpeg" alt="Serum" />
+      <h3>Retinol Night Serum</h3>
+      <p>₹1200</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+
+    <div class="product" data-category="moisturizer" data-price="520">
+      <img src="/images/image6.jpeg.jpeg" alt="Moisturizer" />
+      <h3>Aloe Calm Moisturizer</h3>
+      <p>₹520</p>
+      <button class="add-cart">Add to Cart</button>
+    </div>
+  </main>
+
+  <div id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="subtotal">Subtotal: ₹0</p>
+    <p id="tax">Tax (5%): ₹0</p>
+    <h3 id="total">Total: ₹0</h3>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

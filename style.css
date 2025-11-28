@@ -1,0 +1,171 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #a8edea, #fed6e3);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.todo-container {
+  background: #fff;
+  width: 400px;
+  padding: 20px 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.todo-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Input Section */
+.input-section {
+  display: flex;
+  gap: 10px;
+}
+
+#task-input {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+#add-btn {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#add-btn:hover {
+  background-color: #45a049;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+}
+
+.filter-btn {
+  background: #eee;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.filter-btn.active {
+  background: #4CAF50;
+  color: white;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+}
+
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  transition: 0.3s;
+}
+
+.task-item.completed span {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.task-item button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ff5c5c;
+  font-size: 16px;
+}
+
+/* Task item inner layout */
+.task-item .left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.task-checkbox {
+  width: 18px;
+  height: 18px;
+  accent-color: #4CAF50;
+  cursor: pointer;
+}
+
+.task-text {
+  font-size: 15px;
+  color: #333;
+}
+
+.task-item .actions button {
+  color: #666;
+  font-size: 16px;
+  padding: 6px;
+}
+
+.task-item .actions button:hover {
+  color: #000;
+}
+
+.task-text.editing { display: none; }
+.task-edit-input {
+  flex: 1;
+  padding: 8px;
+  border: 1px dashed #ccc;
+  border-radius: 6px;
+}
+
+.todo-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 12px;
+}
+
+#task-count {
+  color: #666;
+  font-size: 14px;
+}
+
+#clear-completed {
+  background: transparent;
+  border: 1px solid #ddd;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#clear-completed:hover {
+  background: #ffefef;
+  border-color: #ffbdbd;
+}
